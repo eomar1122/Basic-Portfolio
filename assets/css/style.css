@@ -1,0 +1,336 @@
+/* ----------------------------*/               
+/* BASIC SETUP */
+/* ----------------------------*/
+
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	background-color: #ffffff;
+	color: #777777;
+}
+
+.wrapper {
+  	width: 960px;
+  	margin: 0 auto;
+}
+
+/* ----------------------------*/               
+/* clearfix */
+/* ----------------------------*/
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------*/               
+/* HEADING AND PARAGRAPH */
+/* ----------------------------*/
+
+h1 {
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+h2 {
+	font-size: 130%;
+	text-transform: uppercase;
+	color: #4aaaa5;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	letter-spacing: 0.2px;
+	word-spacing: 1px;
+
+}
+
+
+p {
+	text-align: left;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+	padding: 20px;
+	line-height: 150%;
+}
+
+/* ----------------------------*/               
+/* HEADER */
+/* ----------------------------*/
+
+header {
+	width: 100%;
+	height: 100px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: 2px solid #cccccc;
+}
+
+.name-header {
+	float: left;
+	background-color: #4aaaa5;
+	height: 100px;
+	color: #ffffff;
+	margin-left: 29px;
+	padding-top: 30px;
+	width: 25%;
+	font-size: 150%;
+	text-align: center;
+}
+
+/*-- NAVIGATION --*/
+
+.main-nav ul {
+	padding-top: 20px;
+    float: right;
+    list-style: none;   /*-- Get rid of the dots --*/
+    margin-top: 15px;
+    margin-right: 29px;
+}
+
+.main-nav ul li {
+    display: inline-block;  /*-- Make them in one line --*/
+    margin-left: 20px;      /*-- Make a space between elements --*/  
+    border-left: 1px solid #cccccc;
+    padding-left: 20px;
+}
+.main-nav ul li a:link,
+.main-nav ul li a:visited {
+    padding: 8px 0;        /*-- Add padding 8px to the top and bottom of the element and the border --*/
+    color: #777777;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:active {
+    border-bottom: 2px solid #4aaaa5;
+}
+
+.main-nav ul li:first-child {
+	border-left: 1px solid transparent;
+}
+
+/* ----------------------------*/               
+/* BODY */
+/* ----------------------------*/
+
+.main-container {
+	clear: both;
+	background-image: url("../images/dust_scratches.png");
+}
+
+.main-section {
+	clear: both;
+	width: 94%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 40px;
+	margin: auto;
+}
+
+/* ----------------------------*/               
+/* ABOUT ME */
+/* ----------------------------*/
+
+.section-1 {
+	clear: both;
+	width: 68%;
+	background-color: #ffffff;
+	float: left;
+	border: 1px solid #dddddd;
+	margin-right: 4%;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.section-1-title {
+	width: 90%;
+	border-bottom: 2px solid #dddddd;
+	margin: auto;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+#profile-photo img {
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 50%;
+	margin: 0 20px 20px;
+}
+
+
+/* ----------------------------*/               
+/* CONTACT WITH ME SECTION */
+/* ----------------------------*/
+
+.section-2 {
+	width: 28%;
+	background-color: #ffffff;
+	float: left;
+	border: 1px solid #dddddd;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.section-2-title {
+	width: 90%;
+	border-bottom: 2px solid #dddddd;
+	margin: auto;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+
+.social-links li {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-left: 35px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 250%;
+}
+
+.ion-social-github,
+.ion-social-linkedin,
+.ion-social-twitter {
+    transition: color 0.2s;
+}
+
+.ion-social-github:hover {
+    color: #000000;
+}
+
+.ion-social-linkedin:hover {
+    color: #007bb5;
+}
+
+.ion-social-twitter:hover {
+    color: #55acee;
+}
+
+/* ----------------------------*/               
+/* CONTACT FORM */
+/* ----------------------------*/
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+input[type=submit]:hover {
+    background-color: #3b8783;
+}
+
+
+.contact-container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: left;
+}
+
+/* ----------------------------*/               
+/* PORTFOLIO   */
+/* ----------------------------*/
+
+.photo-section {
+    padding: 0;     
+}
+
+.showcase {
+    list-style: none;
+    width: 100%;
+}
+
+
+.showcase li {
+    display: block;
+    float: left;
+    width: 50%;     
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;  
+}
+
+.photo img {
+    opacity: 0.7;     /*-- Make the images darker --*/
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);     /*-- For animation, this will make the image 115% biger than normal --*/
+    transition: transform 0.5s;
+}
+
+.photo img:hover {
+    opacity: 1;                /*-- Make the image lighter when we hover the mouse over them --*/
+    transform: scale(1.03);    /*-- Make the image smaller --*/
+}
+
+
+
+/* ----------------------------*/               
+/* FOOTER */
+/* ----------------------------*/
+
+.format-foo {
+	clear: both;
+	width: 100%;
+	background-color: #666666;
+	height: 100px;
+	font-size: 60%;
+	color: #c3c3c3;
+    padding-top: 40px;
+    border-top: 7px solid #4aaaa5;
+}
+
+.format-foo p {
+	text-align: center;
+	padding: 0;
+}
+
+
